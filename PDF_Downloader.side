@@ -1,0 +1,76 @@
+{
+  "id": "631e1c05-97f6-4dba-9e95-3c90644dc375",
+  "version": "2.0",
+  "name": "IITD",
+  "url": "https://academics.iitd.ac.in",
+  "tests": [{
+    "id": "8cdc78b8-1378-4b5a-b8ee-4d521741d481",
+    "name": "circulars",
+    "commands": [{
+      "id": "5f496cea-652e-46e8-80f4-3b13e512220c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e240462-09e3-49bc-a573-1d9fdd1b42fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1486x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb7a2fad-70cb-422b-a237-b69f8e89cf56",
+      "comment": "",
+      "command": "click",
+      "target": "id=dhtml_menu-396-1",
+      "targets": [
+        ["id=dhtml_menu-396-1", "id"],
+        ["linkText=Academic Circulars", "linkText"],
+        ["css=#dhtml_menu-396-1", "css:finder"],
+        ["xpath=//a[contains(text(),'Academic Circulars')]", "xpath:link"],
+        ["xpath=//a[@id='dhtml_menu-396-1']", "xpath:attributes"],
+        ["xpath=//div[@id='block-menu-menu-programmes']/div/div/ul/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/acad/circulars')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Academic Circulars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aeef23a-7e4b-40f6-be32-a2490d049c86",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View/Download",
+      "targets": [
+        ["linkText=View/Download", "linkText"],
+        ["css=.views-row-first a", "css:finder"],
+        ["xpath=//a[contains(text(),'View/Download')]", "xpath:link"],
+        ["xpath=//div[@id='view-id-academic_circulars-page_1']/div/div/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View/Download')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7832",
+      "windowTimeout": 2000
+    }, {
+      "id": "10cb2f8f-ff9e-46d3-bc03-f603bb5a4a50",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7832}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d44e50a1-a294-41dd-bb0e-a92ee8cd8b97",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8cdc78b8-1378-4b5a-b8ee-4d521741d481"]
+  }],
+  "urls": ["https://academics.iitd.ac.in/"],
+  "plugins": []
+}
